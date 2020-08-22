@@ -141,5 +141,38 @@ var listaPreguntas = [
             ],
             respuesta : 4,
             img : ""
+        },
+        {
+            consigna : "¿Cuál de estos modos de transporte es más capilar?",
+            op : [
+                opcion1 = "Ferrocarril",
+                opcion2 = "Marítimo",
+                opcion3 = "Carretera",
+                opcion4 = "Aéreo"
+            ],
+            respuesta : 3,
+            img : ""
+        },
+        {
+            consigna : "Si tenés que llevar cereales a España ¿En que lo llevas?",
+            op : [
+                opcion1 = "Tren",
+                opcion2 = "Barco",
+                opcion3 = "Avión",
+                opcion4 = "Camión
+            ],
+            respuesta : 2,
+            img : ""
+        },
+        {
+            consigna : "¿En que tipo de barco transportarioas cereales?",
+            op : [
+                opcion1 = "RoRo",
+                opcion2 = "Multipropósito",
+                opcion3 = "Bulkcarrier",
+                opcion4 = "Aceitero"
+            ],
+            respuesta : 3,
+            img : ""
         }
     ];
