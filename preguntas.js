@@ -159,7 +159,7 @@ var listaPreguntas = [
                 opcion1 = "Tren",
                 opcion2 = "Barco",
                 opcion3 = "Avión",
-                opcion4 = "Camión
+                opcion4 = "Camión"
             ],
             respuesta : 2,
             img : ""
