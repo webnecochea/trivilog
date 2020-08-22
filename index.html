@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    
+    <title>Trivia Logistica</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>  
+    
+    <header class="headersito p-1">
+        <h2 class="text-center d-sm-none my-4"> <b> Trivia Logística </b></h1>
+        <h2 class="text-center d-none d-sm-block my-4"> <b> Trivia Logística </b></h1>
+    </header>
+    
+    <header class="headersito2">
+      <div class="container">
+        <div class="row">
+          <i class="fa fa-stopwatch azul m-2 mx-auto" id="IndTiempo"> 10</i>
+          <i class="fa fa-heart rojo m-2 mx-auto" id="IndVida"> 3</i>
+          <i class="fa fa-star amarillo m-2 mx-auto" id="IndPuntos"> 0</i>
+          <i class="fa fa-user m-2 mx-auto" id="nombrey"> NombreJugadorActual</i>
+        </div>
+      </div>
+    </header>
+    
+    <br class="d-none d-sm-block">
+
+    <div class="m-1">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+
+              <!-- Tablero -->
+              <div class="card" id="tablero">
+                  <div class="card-body">
+                    <h6 id="preguntas" class="card-title font-weight-bold my-3 text-center"s>Title</h6>
+                    <a id="1" class="btn-block btn-lg btn-primary text-center" onclick="compararRespuesta(1)">Text</a>
+                    <a id="2" class="btn-block btn-lg btn-warning text-center" onclick="compararRespuesta(2)">Text</a>
+                    <a id="3" class="btn-block btn-lg btn-success text-center" onclick="compararRespuesta(3)">Text</a>
+                    <a id="4" class="btn-block btn-lg btn-danger text-center" onclick="compararRespuesta(4)">Text</a>
+                  </div>
+                </div>
+
+                <!-- Premios -->
+                <div class="card" id="premios">
+                  <big class="mx-3" style="color:black">Lograste una racha de respuestas correctas seguidas! Elegí uno de estos premios</big>
+                    <div class="card-body">
+                      <row id="premio1"></i> x1 </a></row>
+                      <row id="premio2"></row>
+                      <row id="premio3"></row>
+                      <row id="premio4"></row>
+                      <row id="premio5"></row>
+                    </div>
+                  </div>
+
+                  <!-- Inicio del juego -->
+                  <div class="card" id="divinicio">
+                      <div class="card-body">
+                        <h4 style="color:black;">Ingresá tu apodo para comenzar a jugar:</h4>
+                        <input type="text" style="color: black;"  id="Nombre">
+                        <button type="button" onclick="inicio()" id="" class="btn btn-primary" btn-lg btn-block">A Jugar!</button>
+                      </div>
+                    </div>
+
+                    <!-- correcta -->
+                    <div class="card" id="correcta">
+                        <div class="card-body">
+                          <h6 id="preguntas" class="card-title display-3 font-weight-bold my-3 text-center verde"s>Correcta!</h6>
+                          <p class="font-weight-bold display-4 text-center amarillo">+1<i class="fa fa-star fa-fw amarillo" style="font-size:50px !important "aria-hidden="true"></i></p> <a class="display-4 font-weight-bold btn btn-block btn-dark" onclick="seguir()">Seguir</a>
+                        </div>
+                      </div>
+
+                  <!-- incorrecta -->
+                  <div class="card" id="incorrecta">
+                      <div class="card-body">
+                        <h6 id="preguntas" class="card-title display-3 font-weight-bold my-3 text-center rojo"s>Incorrecta!</h6>
+                        <p class="font-weight-bold display-4 text-center rojo">-1<i class="fa fa-heart fa-fw rojo" style="font-size:50px !important "aria-hidden="true"></i></p> <a class="display-4 font-weight-bold btn btn-block btn-dark" onclick="seguir()">Seguir</a>
+                      </div>
+                    </div>
+
+                    <!-- tiempoFuera -->
+                    <div class="card" id="tiempoFuera">
+                        <div class="card-body">
+                          <h6 id="preguntas" class="card-title display-4 font-weight-bold my-3 text-center"s>Tiempo terminado!</h6>
+                          <p class="font-weight-bold display-4 text-center rojo">-1<i class="fa fa-heart fa-fw rojo" style="font-size:50px !important "aria-hidden="true"></i> </p><a class="display-4  font-weight-bold btn btn-block btn-dark" onclick="seguir()">Seguir</a>
+                        </div>
+                      </div>
+
+            </div>
+
+            <div class="col-12 col-md-6" >
+              <div class="card " style="height:100%!important" >
+                <div class="row my-auto">
+                  <a onclick="pasar()" class="btn btn-dark mx-auto my-2" id="BtnPasar" style="width: 130px;height:50px"> <i class="fa fa-arrow-right" aria-hidden="true"></i> Pasar <b id="IndPasar"> [1]</b></a>
+                  <a onclick="boom();" class="btn btn-danger mx-auto my-2" id="BtnBomba" style="width: 130px;height:50px"><i class="fa fa-bomb" aria-hidden="true"></i> Boom <b id="IndBomba">[1]</b></a>
+                </div>
+                <hr>
+                <div class="row my-auto" >
+                  <a onclick="mas20()" class="btn btn-success mx-auto my-2" id="BtnReloj" style="width: 130px;height:50px"><i class="fa fa-stopwatch" aria-hidden="true"></i> +20s <b id="IndReloj">[1]</b></a>
+                  <a onclick="robot();" class="btn btn-primary mx-auto my-2" id="BtnRobot" data-toggle="modal" data-target="#myModal" style="width: 130px;height:50px"><i class="fa fa-circle" aria-hidden="true"></i> Robot <b id="IndRobot">[1]</b></a>
+                </div>
+              </div>
+            </div>
+
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+    
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Robot Dice:</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      
+      <!-- Modal body -->
+      <div id="wally" class="modal-body" style="color:black!important">
+        respuesta
+      </div>
+      
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+           
+        </div>
+    </div>
+
+    <footer class="bg-dark p-4" >
+      <p class="lead text-center">App desarrollada por estudiantes de UNICEN Quequén</p>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./preguntas.js"></script>
+    <script src="./premios.js"></script>
+    <script src="./main.js"></script>
+ </body>
+
+</html>
