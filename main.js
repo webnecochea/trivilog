@@ -160,19 +160,19 @@ var cuestionario = listaPreguntas;
 
     function vegeta(){
         if(ki>15000){
-            document.getElementById("conclusion").innerHTML='Sos lo máximo en conocimientos de logística, no habia visto algo así antes';
+            document.getElementById("conclusion").innerHTML='Sos lo máximo en conocimientos de logística, no había visto algo así antes';
             document.getElementById("imgvegeta").src='./img/3.jpg';
             return 0;
         }
         else{
             if(ki>12000){
-                document.getElementById("conclusion").innerHTML='Estás en un nivel altisimo, a la altura de un licenciado en logística';
+                document.getElementById("conclusion").innerHTML='Estás en un nivel altísimo, a la altura de un licenciado en logística';
                 document.getElementById("imgvegeta").src='./img/3.jpg';
                 return 0;
             }
             else{
                 if(ki>8000){
-                    document.getElementById("conclusion").innerHTML='Muy bien vas en camino a ser un gran logista'
+                    document.getElementById("conclusion").innerHTML='Muy bien, vas en camino a ser un gran logista'
                     document.getElementById("imgvegeta").src='./img/2.png';
                     return 0;
                 }
