@@ -20,6 +20,9 @@ let wally = document.getElementById("wally");
 let Nombre = document.getElementById("Nombre");
 let premios = document.getElementById("premios");
 let DivInicio = document.getElementById("divinicio");
+let final = document.getElementById("final");
+let barraKI = document.getElementById("barraKI");
+let IndKI = document.getElementById("IndKI");
 
 //indicadores
 let IndTiempo = document.getElementById("IndTiempo");
@@ -33,7 +36,7 @@ correcta.style.display = 'none';
 incorrecta.style.display = 'none';
 tiempoFuera.style.display = 'none';
 premios.style.display = 'none';
-
+final.style.display = 'none';
 
 //Cargar preguntas del cuestionario y mezclarlas
 listaPreguntas.sort(function() {return Math.random() - 0.5});
@@ -104,7 +107,7 @@ var cuestionario = listaPreguntas;
     function respCorrecta(){
         puntos++;      
         racha++;    
-        ki += 500 + tiempo*10;
+        ki += 1000 + tiempo*30;
         IndPuntos.innerHTML = puntos;      
         tablero.style.display = 'none';
         correcta.style.display = 'block';
@@ -113,7 +116,7 @@ var cuestionario = listaPreguntas;
     function respErronea(){
         vidas--;
         racha = 0;
-        ki-=250;
+        ki-=150;
         IndVida.innerHTML = vidas;
         tablero.style.display = 'none';
         incorrecta.style.display = 'block';
@@ -153,6 +156,58 @@ var cuestionario = listaPreguntas;
         }
     }
 
+    var acum = 0;
+
+    function vegeta(){
+        if(ki>15000){
+            document.getElementById("conclusion").innerHTML='Sos lo máximo en conocimientos de logística, no habia visto algo así antes';
+            return 0;
+        }
+        else{
+            if(ki>12000){
+                document.getElementById("conclusion").innerHTML='Estás en un nivel altisimo, a la altura de un licenciado en logística';
+                return 0;
+            }
+            else{
+                if(ki>8000){
+                    document.getElementById("conclusion").innerHTML='Muy bien vas en camino a ser un gran logista'
+                    return 0;
+                }
+                else{
+                    if(ki>5000){
+                        document.getElementById("conclusion").innerHTML='Buen intento pero podrías hacerlo mejor';
+                        return 0;
+                    }
+                    else{
+                        document.getElementById("conclusion").innerHTML='Necesitarás estudiar mucho, tenés potencial, pero tu ki de logista en este momento está por el suelo';
+                        return 0;
+                    }
+                }
+            }
+        }
+    }
+
+    function KI(){
+        vegeta();
+        for(i=0;i<5000;i++){
+            if(acum<ki){
+                setTimeout("subirKI();",200);
+            }
+            else{return 0;}
+        }
+    }
+
+    function subirKI(){
+        if(acum<ki){
+            acum+= Math.random()*10;
+            barraKI.style.width= (acum*100/25000).toFixed()+'%';
+            IndKI.innerHTML=acum.toFixed();
+        }
+        else{
+            return 0;
+        }
+    }
+
     function premio3(){
         correcta.style.display = 'none';
         premios.style.display = 'block';
@@ -168,7 +223,12 @@ var cuestionario = listaPreguntas;
         if(ki<0){
             ki=0;
         }
-        alert('fin del juego. Puntaje: '+puntos+'  tu ki: '+ki);
+        limpiarPantalla();
+        document.getElementById("tablero").style.display = 'none';
+        document.getElementById("control").style.display = 'none';
+        final.style.display='block';
+        document.getElementById("findelj").innerHTML = 'Fin del juego! '+ Nombre.value + ' ha sumado: '+ puntos +' punto/s'
+        
     }
 
     function comenzar(){
