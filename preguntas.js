@@ -108,5 +108,38 @@ var listaPreguntas = [
             ],
             respuesta : 4,
             img : ""
+        },
+        {
+            consigna : "¿Cuales son las etapas en el ciclo de vida de un producto?",
+            op : [
+                opcion1 = "Introduccion, crecimiento, madurez",
+                opcion2 = "Introduccion, crecimiento, madurez, decaimiento",
+                opcion3 = "Crecimiento, madurez, decaimiento",
+                opcion4 = "Nacimiento, crecimiento, madurez, éxito"
+            ],
+            respuesta : 2,
+            img : ""
+        },
+        {
+            consigna : "¿Cual de estas es una caracteristica clave de los productos?",
+            op : [
+                opcion1 = "Peso-Volumen",
+                opcion2 = "Valor-Peso",
+                opcion3 = "Sustituibilidad",
+                opcion4 = "Todas las anteriores"
+            ],
+            respuesta : 4,
+            img : ""
+        },
+        {
+            consigna : "Las clases de almacenes pueden ser",
+            op : [
+                opcion1 = "Según naturaleza del producto",
+                opcion2 = "Según tamaño del almacen",
+                opcion3 = "Según función logistica",
+                opcion4 = "Todas las anteriores"
+            ],
+            respuesta : 4,
+            img : ""
         }
     ];
