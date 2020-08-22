@@ -1,6 +1,6 @@
 var listaPreguntas = [
         {
-            consigna : "En un almacen ¿donde deben colocarse los productos de mayor rotacion?",
+            consigna : "En un almacén ¿dónde deben colocarse los productos de mayor rotación?",
             op : [
                 opcion1 = "Cerca de la entrada",
                 opcion2 = "Al fondo",
@@ -11,7 +11,7 @@ var listaPreguntas = [
             img : ""
         },
         {
-            consigna : "¿Cual de los siguientes NO es motivo de aplicar logística inversa?",
+            consigna : "¿Cuál de los siguientes NO es motivo de aplicar logística inversa?",
             op : [
                 opcion1 = "Producto defectuoso",
                 opcion2 = "Reciclaje",
@@ -57,16 +57,16 @@ var listaPreguntas = [
         {
             consigna : "¿Que significan las siglas FIFO?",
             op : [
-                opcion1 = "Federacion de intereses de Francia y Orlando",
-                opcion2 = "Primero en entrar, primero en salir",
-                opcion3 = "Primero en entrar, último en salir",
-                opcion4 = "Federacion internacional de fines osados"
+                opcion1 = "Federación de intereses de Francia y Orlando",
+                opcion2 = "Primero en entrar, primero en salír",
+                opcion3 = "Primero en entrar, último en salír",
+                opcion4 = "Federación internacional de fines osados"
             ],
             respuesta : 2,
             img : ""
         },
         {
-            consigna : "¿Cual de estas NO es una de las principales funciones de un gerente?",
+            consigna : "¿Cuál de estas NO es una de las principales funciones de un gerente?",
             op : [
                 opcion1 = "Planificar",
                 opcion2 = "Organizar",
@@ -77,7 +77,7 @@ var listaPreguntas = [
             img : ""
         },
         {
-            consigna : "¿Donde es conveniente instalar una terminal de mercancias?",
+            consigna : "¿Dónde es conveniente instalar una terminal de mercancias?",
             op : [
                 opcion1 = "En el centro de la ciudad",
                 opcion2 = "En las periferias",
@@ -88,7 +88,7 @@ var listaPreguntas = [
             img : ""
         },
         {
-            consigna : "¿En que ambito nacio la logística?",
+            consigna : "¿En que ámbito nació la logística?",
             op : [
                 opcion1 = "En los deportes",
                 opcion2 = "En los negocios",
@@ -99,21 +99,21 @@ var listaPreguntas = [
             img : ""
         },
         {
-            consigna : "¿Cuales de estos factores favorecieron la globalizacion del mercado?",
+            consigna : "¿Cuáles de estos factores favorecieron la globalización del mercado?",
             op : [
                 opcion1 = "Internet",
                 opcion2 = "Los contenedores",
-                opcion3 = "La construccion de corredores y canales",
+                opcion3 = "La construcción de corredores y canales",
                 opcion4 = "Todas las anteriores"
             ],
             respuesta : 4,
             img : ""
         },
         {
-            consigna : "¿Cuales son las etapas en el ciclo de vida de un producto?",
+            consigna : "¿Cuáles son las etapas en el ciclo de vida de un producto?",
             op : [
-                opcion1 = "Introduccion, crecimiento, madurez",
-                opcion2 = "Introduccion, crecimiento, madurez, decaimiento",
+                opcion1 = "Introducción, crecimiento, madurez",
+                opcion2 = "Introducción, crecimiento, madurez, decaimiento",
                 opcion3 = "Crecimiento, madurez, decaimiento",
                 opcion4 = "Nacimiento, crecimiento, madurez, éxito"
             ],
@@ -121,7 +121,7 @@ var listaPreguntas = [
             img : ""
         },
         {
-            consigna : "¿Cual de estas es una caracteristica clave de los productos?",
+            consigna : "¿Cual de estas es una característica clave de los productos?",
             op : [
                 opcion1 = "Peso-Volumen",
                 opcion2 = "Valor-Peso",
