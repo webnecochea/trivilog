@@ -62,6 +62,26 @@
                     </div>
                   </div>
 
+                  <!-- Fin del Juego -->
+                  <div class="card" id="final">
+                    <row>
+                      <h4  class="mx-3 inline text-center" style="color:black" id="findelj">Fin del juego! player ha sumado 5 puntos</h4>
+                    </row>
+                      <div class="card-body">
+                        <row style="color: black;" class="text-center">¿Le permitis a Vegeta medir tu habilidad como logista?</row>
+                        <div class="progress mt-4">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" id="barraKI" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="25000" style="width: 0%">
+                          </div>
+                        </div>
+                        <h1 class="text-center" id="IndKI">0</h1>
+                        <div class="col-6 my-auto mx-auto">
+                          <img src="./img/vegeta.webp" width="100%">
+                        </div>
+                        <row id=""> <a onclick="KI()" class="btn btn-block btn-dark">Medir KI</a> </row>
+                      </div>
+                      <h4 id="conclusion"></h4>
+                    </div>
+
                   <!-- Inicio del juego -->
                   <div class="card" id="divinicio">
                       <div class="card-body">
@@ -97,7 +117,7 @@
 
             </div>
 
-            <div class="col-12 col-md-6" >
+            <div class="col-12 col-md-6" id="control">
               <div class="card " style="height:100%!important" >
                 <div class="row my-auto">
                   <a onclick="pasar()" class="btn btn-dark mx-auto my-2" id="BtnPasar" style="width: 130px;height:50px"> <i class="fa fa-arrow-right" aria-hidden="true"></i> Pasar <b id="IndPasar"> [1]</b></a>
