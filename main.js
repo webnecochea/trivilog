@@ -1,3 +1,5 @@
+//probando github remote ultima version
+
 //constantes importantes
 const Tinicial = 20;
 const Vinicial = 3;
@@ -7,6 +9,7 @@ var tiempo = Tinicial;
 var puntos = 0;
 var vidas = Vinicial;
 var enJuego = true;
+var detuvo = false;
 var preguntaActual = 0;
 var racha = 0;
 var ki = 0;
@@ -61,6 +64,7 @@ var cuestionario = listaPreguntas;
         vidas--;
         IndVida.innerHTML = ' ' + vidas;
         enJuego = false;
+        detuvo = true;
         tablero.style.display = 'none';
         tiempoFuera.style.display = 'block';
     }
@@ -75,6 +79,7 @@ var cuestionario = listaPreguntas;
     function activarPregunta(){
         enJuego = true;
         tiempo = Tinicial;  
+        if(detuvo){iniciarReloj();}
         preguntaActual = cuestionario.pop();
         document.getElementById("preguntas").innerHTML = preguntaActual.consigna;
         pintarOpciones(preguntaActual.op);
@@ -160,19 +165,19 @@ var cuestionario = listaPreguntas;
 
     function vegeta(){
         if(ki>15000){
-            document.getElementById("conclusion").innerHTML='Sos lo máximo en conocimientos de logística, no había visto algo así antes';
+            document.getElementById("conclusion").innerHTML='Sos lo máximo en conocimientos de logística, no habia visto algo así antes';
             document.getElementById("imgvegeta").src='./img/3.jpg';
             return 0;
         }
         else{
             if(ki>12000){
-                document.getElementById("conclusion").innerHTML='Estás en un nivel altísimo, a la altura de un licenciado en logística';
+                document.getElementById("conclusion").innerHTML='Estás en un nivel altisimo, a la altura de un licenciado en logística';
                 document.getElementById("imgvegeta").src='./img/3.jpg';
                 return 0;
             }
             else{
                 if(ki>8000){
-                    document.getElementById("conclusion").innerHTML='Muy bien, vas en camino a ser un gran logista'
+                    document.getElementById("conclusion").innerHTML='Muy bien vas en camino a ser un gran logista'
                     document.getElementById("imgvegeta").src='./img/2.png';
                     return 0;
                 }
@@ -388,6 +393,3 @@ function inicio(){
     activarPregunta();
     iniciarReloj();
 }
-
-
-//Comenzar Juego
