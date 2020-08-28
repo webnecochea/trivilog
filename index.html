@@ -85,12 +85,14 @@
                     </div>
 
                   <!-- Inicio del juego -->
-                  <div class="card" id="divinicio" style="border:0px solid black">
+                  <div class="card" id="divinicio" style="border:0px solid black;text-align: center;">
                       <div class="card-body">
                         <br>
                         <h4 class="text-center my-3" style="color:black;">Ingresá tu apodo para comenzar a jugar:</h4>
-                        <input type="text" style="color: black;"  id="Nombre">
-                        <button type="button" onclick="inicio()" id="" class="btn btn-primary" btn-lg btn-block">A Jugar!</button>
+                        <div class="col-sm-5 col-12 mx-auto">
+                            <input class="mx-auto text-center" type="text" style="color: black;"  id="Nombre">
+                            <button type="button" onclick="inicio()" id="" class="btn btn-primary" btn-lg btn-block">A Jugar!</button>
+                        </div>
                         <br><br><br>
                       </div>
                     </div>
@@ -98,7 +100,7 @@
                     <!-- correcta -->
                     <div class="card" id="correcta" style="border:0px solid black">
                         <div class="card-body">
-                          <h6 id="preguntas" class="card-title display-4 font-weight-bold my-3 text-center verde"s>Correcta!</h6>
+                          <h6 id="preguntas" class="card-title diseplay-4 font-weight-bold my-3 text-center verde"s>Correcta!</h6>
                           <p class="font-weight-bold display-4 text-center amarillo">+1<i class="fa fa-star fa-fw amarillo" style="font-size:50px !important "aria-hidden="true"></i></p> <a class="display-4 font-weight-bold btn btn-block btn-dark" onclick="seguir()">Seguir</a>
                         </div>
                       </div>
@@ -123,7 +125,7 @@
                   </div>
 
 
-        <div class="row">
+        <div class="row ">
 
             <div class="col-12 col-md-8 mx-auto" id="control" >
               <div class="card headersito" style="height:100%!important;" >
