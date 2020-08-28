@@ -33,14 +33,13 @@
       </div>
     </header>
     
-    <br class="d-none d-sm-block">
 
     <div class="m-1">
         <div class="row">
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-5 col-sm-12 mx-auto" >
 
               <!-- Tablero -->
-              <div class="card" id="tablero">
+              <div class="card" id="tablero" style="border:0px solid black">
                   <div class="card-body">
                     <h6 id="preguntas" class="card-title font-weight-bold my-3 text-center"s>Title</h6>
                     <a id="1" class="btn-block btn-lg btn-primary text-center" onclick="compararRespuesta(1)">Text</a>
@@ -51,7 +50,7 @@
                 </div>
 
                 <!-- Premios -->
-                <div class="card" id="premios">
+                <div class="card" id="premios" style="border:0px solid black">
                   <big class="mx-3" style="color:black">Lograste una racha de respuestas correctas seguidas! Elegí uno de estos premios</big>
                     <div class="card-body">
                       <row id="premio1"></i> x1 </a></row>
@@ -63,7 +62,7 @@
                   </div>
 
                   <!-- Fin del Juego -->
-                  <div class="card mx-auto" id="final">
+                  <div class="card mx-auto" id="final" style="border:0px solid black">
                     <row>
                       <h4  class="mx-3 inline text-center" style="color:black" id="findelj">Fin del juego! player ha sumado 5 puntos</h4>
                     </row>
@@ -81,11 +80,11 @@
                       </div>
                       <h4 id="conclusion"></h4>
                       <br>
-                      <a href="http://www.quequen.unicen.edu.ar/?page_id=75" class="btn btn-block btn-success">Inscribirme en Logística</a>
+                      <a href="http://www.quequen.unicen.edu.ar/?page_id=75" class="btn btn-block btn-success">Ver info de la carrera Logística</a>
                     </div>
 
                   <!-- Inicio del juego -->
-                  <div class="card" id="divinicio">
+                  <div class="card" id="divinicio" style="border:0px solid black">
                       <div class="card-body">
                         <h4 style="color:black;">Ingresá tu apodo para comenzar a jugar:</h4>
                         <input type="text" style="color: black;"  id="Nombre">
@@ -94,7 +93,7 @@
                     </div>
 
                     <!-- correcta -->
-                    <div class="card" id="correcta">
+                    <div class="card" id="correcta" style="border:0px solid black">
                         <div class="card-body">
                           <h6 id="preguntas" class="card-title display-3 font-weight-bold my-3 text-center verde"s>Correcta!</h6>
                           <p class="font-weight-bold display-4 text-center amarillo">+1<i class="fa fa-star fa-fw amarillo" style="font-size:50px !important "aria-hidden="true"></i></p> <a class="display-4 font-weight-bold btn btn-block btn-dark" onclick="seguir()">Seguir</a>
@@ -102,7 +101,7 @@
                       </div>
 
                   <!-- incorrecta -->
-                  <div class="card" id="incorrecta">
+                  <div class="card" id="incorrecta" style="border:0px solid black">
                       <div class="card-body">
                         <h6 id="preguntas" class="card-title display-3 font-weight-bold my-3 text-center rojo"s>Incorrecta!</h6>
                         <p class="font-weight-bold display-4 text-center rojo">-1<i class="fa fa-heart fa-fw rojo" style="font-size:50px !important "aria-hidden="true"></i></p> <a class="display-4 font-weight-bold btn btn-block btn-dark" onclick="seguir()">Seguir</a>
@@ -110,17 +109,21 @@
                     </div>
 
                     <!-- tiempoFuera -->
-                    <div class="card" id="tiempoFuera">
+                    <div class="card" id="tiempoFuera" style="border:0px solid black">
                         <div class="card-body">
                           <h6 id="preguntas" class="card-title display-4 font-weight-bold my-3 text-center"s>Tiempo terminado!</h6>
                           <p class="font-weight-bold display-4 text-center rojo">-1<i class="fa fa-heart fa-fw rojo" style="font-size:50px !important "aria-hidden="true"></i> </p><a class="display-4  font-weight-bold btn btn-block btn-dark" onclick="seguir()">Seguir</a>
                         </div>
                       </div>
 
-            </div>
+                    </div>
+                  </div>
 
-            <div class="col-12 col-md-6" id="control">
-              <div class="card " style="height:100%!important" >
+
+        <div class="row">
+
+            <div class="col-12 col-md-5 mx-auto" id="control" >
+              <div class="card headersito" style="height:100%!important;" >
                 <div class="row my-auto">
                   <a onclick="pasar()" class="btn btn-dark mx-auto my-2" id="BtnPasar" style="width: 130px;height:50px"> <i class="fa fa-arrow-right" aria-hidden="true"></i> Pasar <b id="IndPasar"> [1]</b></a>
                   <a onclick="boom();" class="btn btn-danger mx-auto my-2" id="BtnBomba" style="width: 130px;height:50px"><i class="fa fa-bomb" aria-hidden="true"></i> Boom <b id="IndBomba">[1]</b></a>
