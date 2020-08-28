@@ -40,6 +40,7 @@ incorrecta.style.display = 'none';
 tiempoFuera.style.display = 'none';
 premios.style.display = 'none';
 final.style.display = 'none';
+document.getElementById('nombrey').style.display = "none";
 
 //Cargar preguntas del cuestionario y mezclarlas
 listaPreguntas.sort(function() {return Math.random() - 0.5});
@@ -389,7 +390,8 @@ var numeros = [1,2,3,4];
 
 
 function inicio(){
-    document.getElementById('nombrey').innerHTML= Nombre.value;
+    document.getElementById('nombrey').innerHTML= ' '+Nombre.value;
+    document.getElementById('nombrey').style.display = "block";
     activarPregunta();
     iniciarReloj();
 }
