@@ -37,7 +37,7 @@
 
     <div class="">
         <div class="row">
-            <div class="col-md-5 col-sm-12 mx-auto" >
+            <div class="col-md-8 col-sm-12 mx-auto" >
 
               <!-- Tablero -->
               <div class="card" id="tablero" style="border:0px solid black">
@@ -65,7 +65,7 @@
                   <!-- Fin del Juego -->
                   <div class="card mx-auto" id="final" style="border:0px solid black">
                     <row>
-                      <h4  class="mx-3 inline text-center" style="color:black" id="findelj">Fin del juego! player ha sumado 5 puntos</h4>
+                      <h4  class="mx-3 inline text-center pt-2" style="color:black" id="findelj">Fin del juego! player ha sumado 5 puntos</h4>
                     </row>
                       <div class="card-body">
                         <row style="color: black;" class="text-center">¿Le permitis a Vegeta medir tu habilidad como logista?</row>
@@ -79,7 +79,7 @@
                         </div>
                         <row id=""> <a onclick="KI()" class="btn btn-block btn-dark">Medir KI</a> </row>
                       </div>
-                      <h4 id="conclusion"></h4>
+                      <h4 class="text-center" id="conclusion"></h4>
                       <br>
                       <a href="http://www.quequen.unicen.edu.ar/?page_id=75" class="btn btn-block btn-success">Ver info de la carrera Logística</a>
                     </div>
@@ -87,9 +87,11 @@
                   <!-- Inicio del juego -->
                   <div class="card" id="divinicio" style="border:0px solid black">
                       <div class="card-body">
-                        <h4 style="color:black;">Ingresá tu apodo para comenzar a jugar:</h4>
+                        <br>
+                        <h4 class="text-center my-3" style="color:black;">Ingresá tu apodo para comenzar a jugar:</h4>
                         <input type="text" style="color: black;"  id="Nombre">
                         <button type="button" onclick="inicio()" id="" class="btn btn-primary" btn-lg btn-block">A Jugar!</button>
+                        <br><br><br>
                       </div>
                     </div>
 
@@ -123,7 +125,7 @@
 
         <div class="row">
 
-            <div class="col-12 col-md-5 mx-auto" id="control" >
+            <div class="col-12 col-md-8 mx-auto" id="control" >
               <div class="card headersito" style="height:100%!important;" >
                 <div class="row my-auto">
                   <a onclick="pasar()" class="btn btn-dark mx-auto my-2" id="BtnPasar" style="width: 130px;height:50px"> <i class="fa fa-arrow-right" aria-hidden="true"></i> Pasar <b id="IndPasar"> [1]</b></a>
