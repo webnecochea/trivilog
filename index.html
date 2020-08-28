@@ -18,23 +18,24 @@
   <body>  
     
     <header class="headersito p-1">
-        <h2 class="text-center d-sm-none my-4"> <b> Trivia Logística </b></h1>
-        <h2 class="text-center d-none d-sm-block my-4"> <b> Trivia Logística </b></h1>
+        <h2 class="text-center d-sm-none "> <b> Trivia Logística </b></h1>
+        <h2 class="text-center d-none d-sm-block"> <b> Trivia Logística </b></h1>
+        <div class="container text-center">
+        <div class="row mx-auto text-center"   style="display: inline-block;">
+          <i class="fa fa-stopwatch azul  mx-auto" id="IndTiempo"> 10</i>
+          <i class="fa fa-heart rojo  mx-auto" id="IndVida"> 3</i>
+          <i class="fa fa-star amarillo  mx-auto" id="IndPuntos"> 0</i>
+          <i class="fa fa-user mt-2 mx-auto" id="nombrey"> NombreJugadorActual</i>
+        </div>
+      </div> 
     </header>
     
     <header class="headersito2">
-      <div class="container">
-        <div class="row">
-          <i class="fa fa-stopwatch azul m-2 mx-auto" id="IndTiempo"> 10</i>
-          <i class="fa fa-heart rojo m-2 mx-auto" id="IndVida"> 3</i>
-          <i class="fa fa-star amarillo m-2 mx-auto" id="IndPuntos"> 0</i>
-          <i class="fa fa-user m-2 mx-auto" id="nombrey"> NombreJugadorActual</i>
-        </div>
-      </div>
+ 
     </header>
     
 
-    <div class="m-1">
+    <div class="">
         <div class="row">
             <div class="col-md-5 col-sm-12 mx-auto" >
 
@@ -95,7 +96,7 @@
                     <!-- correcta -->
                     <div class="card" id="correcta" style="border:0px solid black">
                         <div class="card-body">
-                          <h6 id="preguntas" class="card-title display-3 font-weight-bold my-3 text-center verde"s>Correcta!</h6>
+                          <h6 id="preguntas" class="card-title display-4 font-weight-bold my-3 text-center verde"s>Correcta!</h6>
                           <p class="font-weight-bold display-4 text-center amarillo">+1<i class="fa fa-star fa-fw amarillo" style="font-size:50px !important "aria-hidden="true"></i></p> <a class="display-4 font-weight-bold btn btn-block btn-dark" onclick="seguir()">Seguir</a>
                         </div>
                       </div>
@@ -103,7 +104,7 @@
                   <!-- incorrecta -->
                   <div class="card" id="incorrecta" style="border:0px solid black">
                       <div class="card-body">
-                        <h6 id="preguntas" class="card-title display-3 font-weight-bold my-3 text-center rojo"s>Incorrecta!</h6>
+                        <h6 id="preguntas" class="card-title display-4 font-weight-bold my-3 text-center rojo"s>Incorrecta!</h6>
                         <p class="font-weight-bold display-4 text-center rojo">-1<i class="fa fa-heart fa-fw rojo" style="font-size:50px !important "aria-hidden="true"></i></p> <a class="display-4 font-weight-bold btn btn-block btn-dark" onclick="seguir()">Seguir</a>
                       </div>
                     </div>
@@ -111,7 +112,7 @@
                     <!-- tiempoFuera -->
                     <div class="card" id="tiempoFuera" style="border:0px solid black">
                         <div class="card-body">
-                          <h6 id="preguntas" class="card-title display-4 font-weight-bold my-3 text-center"s>Tiempo terminado!</h6>
+                          <h1 id="preguntas" class="card-title font-weight-bold my-3 text-center"s>Tiempo terminado!</h1>
                           <p class="font-weight-bold display-4 text-center rojo">-1<i class="fa fa-heart fa-fw rojo" style="font-size:50px !important "aria-hidden="true"></i> </p><a class="display-4  font-weight-bold btn btn-block btn-dark" onclick="seguir()">Seguir</a>
                         </div>
                       </div>
@@ -128,7 +129,6 @@
                   <a onclick="pasar()" class="btn btn-dark mx-auto my-2" id="BtnPasar" style="width: 130px;height:50px"> <i class="fa fa-arrow-right" aria-hidden="true"></i> Pasar <b id="IndPasar"> [1]</b></a>
                   <a onclick="boom();" class="btn btn-danger mx-auto my-2" id="BtnBomba" style="width: 130px;height:50px"><i class="fa fa-bomb" aria-hidden="true"></i> Boom <b id="IndBomba">[1]</b></a>
                 </div>
-                <hr>
                 <div class="row my-auto" >
                   <a onclick="mas20()" class="btn btn-success mx-auto my-2" id="BtnReloj" style="width: 130px;height:50px"><i class="fa fa-stopwatch" aria-hidden="true"></i> +20s <b id="IndReloj">[1]</b></a>
                   <a onclick="robot();" class="btn btn-primary mx-auto my-2" id="BtnRobot" data-toggle="modal" data-target="#myModal" style="width: 130px;height:50px"><i class="fa fa-circle" aria-hidden="true"></i> Robot <b id="IndRobot">[1]</b></a>
