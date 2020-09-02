@@ -185,5 +185,16 @@ var listaPreguntas = [
             ],
             respuesta : 3,
             img : ""
+        },
+        {
+            consigna : "¿Donde puedo estudiar Licenciatura en Logística?",
+            op : [
+                opcion1 = "Se puede estudiar dos años en Quequén y luego hay que irse a otra ciudad",
+                opcion2 = "Se puede estudiar los 4 años en Quequén",
+                opcion3 = "En la escuela nacional de Logística ubicada en la Antartida",
+                opcion4 = "En Tandil"
+            ],
+            respuesta : 3,
+            img : ""
         }
     ];
