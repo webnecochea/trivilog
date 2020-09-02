@@ -180,8 +180,8 @@ var listaPreguntas = [
             op : [
                 opcion1 = "El primero",
                 opcion2 = "El ultimo",
-                opcion3 = "El mas debil",
-                opcion4 = "El mas fuerte"
+                opcion3 = "El más debil",
+                opcion4 = "El más fuerte"
             ],
             respuesta : 3,
             img : ""
@@ -194,7 +194,7 @@ var listaPreguntas = [
                 opcion3 = "En la escuela nacional de Logística ubicada en la Antartida",
                 opcion4 = "En Tandil"
             ],
-            respuesta : 3,
+            respuesta : 2,
             img : ""
         }
     ];
