@@ -174,5 +174,16 @@ var listaPreguntas = [
             ],
             respuesta : 3,
             img : ""
+        },
+        {
+            consigna : "Si se quiere mejorar una cadena de producción, ¿Que eslabón se debe mejorar?",
+            op : [
+                opcion1 = "El primero",
+                opcion2 = "El ultimo",
+                opcion3 = "El mas debil",
+                opcion4 = "El mas fuerte"
+            ],
+            respuesta : 3,
+            img : ""
         }
     ];
