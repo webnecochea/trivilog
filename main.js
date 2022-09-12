@@ -166,13 +166,13 @@ var cuestionario = listaPreguntas;
 
     function vegeta(){
         if(ki>15000){
-            document.getElementById("conclusion").innerHTML='Sos lo máximo en conocimientos de logística, no habia visto algo así antes';
+            document.getElementById("conclusion").innerHTML='Sos lo máximo en conocimientos de logística, no había visto algo así antes';
             document.getElementById("imgvegeta").src='./img/3.jpg';
             return 0;
         }
         else{
             if(ki>12000){
-                document.getElementById("conclusion").innerHTML='Estás en un nivel altisimo, a la altura de un licenciado en logística';
+                document.getElementById("conclusion").innerHTML='Estás en un nivel altísimo, a la altura de un licenciado en logística';
                 document.getElementById("imgvegeta").src='./img/3.jpg';
                 return 0;
             }
@@ -189,7 +189,7 @@ var cuestionario = listaPreguntas;
                         return 0;
                     }
                     else{
-                        document.getElementById("conclusion").innerHTML='Necesitarás estudiar mucho, tenés potencial, pero tu ki de logista en este momento está por el suelo';
+                        document.getElementById("conclusion").innerHTML='Necesitarás estudiar mucho. Tenés potencial, pero tu ki de logista en este momento está por el suelo';
                         document.getElementById("imgvegeta").src='./img/1.png';
                         return 0;
                     }
@@ -285,7 +285,7 @@ var numeros = [1,2,3,4];
         }  
         else{
             if(!enJuego){
-                alert('no hay opciones para bombardear');
+                alert('No hay opciones para bombardear');
             }
             else{
                 alert('No hay bombas disponibles');
@@ -305,7 +305,7 @@ var numeros = [1,2,3,4];
                 alert('No hay una pregunta activa para saltearla');
             }
             else{
-                alert('No dispones de este comodin');
+                alert('No dispones de este comodín');
             }
         }
     }       
@@ -324,7 +324,7 @@ var numeros = [1,2,3,4];
 
     function robot(){
         if(Nrobots==0){
-            wally.innerHTML = 'Lo siento, mi bateria está muy baja en este momento';
+            wally.innerHTML = 'Lo siento, mi batería está muy baja en este momento';
         }
         else{
             let ans = preguntaActual.respuesta - 1;
