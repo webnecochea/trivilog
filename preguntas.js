@@ -22,7 +22,7 @@ var listaPreguntas = [
             img : ""
         },
         {
-            consigna : "En logística ¿A que se le llama cuello de botella?",
+            consigna : "En logística ¿A qué se le llama cuello de botella?",
             op : [
                 opcion1 = "Una herramienta para manipular liquidos",
                 opcion2 = "Un gerente con problemas de alcoholismo",
@@ -44,7 +44,7 @@ var listaPreguntas = [
             img : ""
         },
         {
-            consigna : "¿Que conocimientos debe tener un Lic. en Logistica Integral?",
+            consigna : "¿Qué conocimientos debe tener un Lic. en Logística Integral?",
             op : [
                 opcion1 = "De economía",
                 opcion2 = "De Matemáticas",
@@ -55,7 +55,7 @@ var listaPreguntas = [
             img : ""
         },
         {
-            consigna : "¿Que significan las siglas FIFO?",
+            consigna : "¿Qué significan las siglas FIFO?",
             op : [
                 opcion1 = "Federación de intereses de Francia y Orlando",
                 opcion2 = "Primero en entrar, primero en salír",
@@ -88,7 +88,7 @@ var listaPreguntas = [
             img : ""
         },
         {
-            consigna : "¿En que ámbito nació la logística?",
+            consigna : "¿En qué ámbito nació la logística?",
             op : [
                 opcion1 = "En los deportes",
                 opcion2 = "En los negocios",
@@ -121,7 +121,7 @@ var listaPreguntas = [
             img : ""
         },
         {
-            consigna : "¿Cual de estas es una característica clave de los productos?",
+            consigna : "¿Cuál de estas es una característica clave de los productos?",
             op : [
                 opcion1 = "Peso-Volumen",
                 opcion2 = "Valor-Peso",
@@ -135,8 +135,8 @@ var listaPreguntas = [
             consigna : "Las clases de almacenes pueden ser",
             op : [
                 opcion1 = "Según naturaleza del producto",
-                opcion2 = "Según tamaño del almacen",
-                opcion3 = "Según función logistica",
+                opcion2 = "Según tamaño del almacén",
+                opcion3 = "Según función logística",
                 opcion4 = "Todas las anteriores"
             ],
             respuesta : 4,
@@ -154,7 +154,7 @@ var listaPreguntas = [
             img : ""
         },
         {
-            consigna : "Si tenés que llevar cereales a España ¿En que lo llevas?",
+            consigna : "Si tenés que llevar cereales a España ¿En qué lo llevas?",
             op : [
                 opcion1 = "Tren",
                 opcion2 = "Barco",
@@ -165,7 +165,7 @@ var listaPreguntas = [
             img : ""
         },
         {
-            consigna : "¿En que tipo de barco transportarioas cereales?",
+            consigna : "¿En qué tipo de barco transportarioas cereales?",
             op : [
                 opcion1 = "RoRo",
                 opcion2 = "Multipropósito",
@@ -176,10 +176,10 @@ var listaPreguntas = [
             img : ""
         },
         {
-            consigna : "Si se quiere mejorar una cadena de producción, ¿Que eslabón se debe mejorar?",
+            consigna : "Si se quiere mejorar una cadena de producción, ¿Qué eslabón se debe mejorar?",
             op : [
                 opcion1 = "El primero",
-                opcion2 = "El ultimo",
+                opcion2 = "El último",
                 opcion3 = "El más debil",
                 opcion4 = "El más fuerte"
             ],
@@ -187,7 +187,7 @@ var listaPreguntas = [
             img : ""
         },
         {
-            consigna : "¿Donde puedo estudiar Licenciatura en Logística?",
+            consigna : "¿Dónde puedo estudiar Licenciatura en Logística?",
             op : [
                 opcion1 = "Se puede estudiar dos años en Quequén y luego hay que irse a otra ciudad",
                 opcion2 = "Se puede estudiar los 4 años en Quequén",
